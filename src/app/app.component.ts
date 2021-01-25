@@ -11,12 +11,40 @@ export class AppComponent {
   number = 42;
   arr = [1, 2, 3];
   obj = {a: 1, b: {c: 2}};
-  img = 'https://seeklogo.com/images/R/react-logo-7B3CE81517-seeklogo.com.png';
+
+  imputValue = '';
+
+  // img = 'https://seeklogo.com/images/R/react-logo-7B3CE81517-seeklogo.com.png';
 
   constructor() {
-  setTimeout(() => {
-    console.log('Timeout is over');
-    this.img = 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png';
-  }, 5000);
+  // setTimeout(() => {
+  //   console.log('Timeout is over');
+  //   this.img = 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png';
+  // }, 5000);
   }
+
+  onInput(event?: any){
+    console.log('Event', event);
+    this.imputValue = event.target.value
+  }
+
+  onClick(){
+    console.log('Click!');
+  }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

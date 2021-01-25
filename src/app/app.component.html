@@ -6,7 +6,11 @@
 <!--<p>{{40+2}}</p>-->
 <!--<p>{{'Hello' + '  world!'}}</p>-->
 
-<img [src] = "img">
+<!--<img [src] = "img">-->
+<button (click)="onClick()" >Click me!</button>
+
+<input type="text" (input)="onInput($event)">
+<p><strong>{{imputValue}}</strong></p>
 
 <hr/>
 <app-post></app-post>
