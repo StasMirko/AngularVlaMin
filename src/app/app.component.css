@@ -1,9 +1,11 @@
 .red{
   background: #d46767;
   font-weight: bold;
+  color: #dbfdfd;
 }
 
 .blue{
   background: #6868ad;
   font-size: 1.5rem;
+  color: azure;
 }
