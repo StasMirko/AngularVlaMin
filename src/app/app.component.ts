@@ -23,9 +23,12 @@ export class AppComponent {
   // }, 5000);
   }
 
-  onInput(event?: any){
-    console.log('Event', event);
-    this.imputValue = event.target.value
+  onInput(event: KeyboardEvent){
+    this.imputValue = (<HTMLInputElement>event.target).value
+  }
+
+  onBlur(str: string){
+      this.imputValue = str;
   }
 
   onClick(){
