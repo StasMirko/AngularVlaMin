@@ -15,7 +15,13 @@ export class AppComponent {
 posts: Post[] = [
   {title: 'I want to learn Angular component', text: 'I learn component', id: 1},
   {title: 'The next block', text: 'It will be about directives and about pipes yet', id: 2}
-]
+];
+
+  // tslint:disable-next-line:typedef
+  updatePosts(post: Post){
+    this.posts.unshift(post)
+  }
+
 }
 
 
