@@ -19,7 +19,7 @@ posts: Post[] = [
 
   // tslint:disable-next-line:typedef
   updatePosts(post: Post){
-    this.posts.unshift(post)
+    this.posts.unshift(post);
   }
 
 }
